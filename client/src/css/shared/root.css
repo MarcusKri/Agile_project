@@ -1,0 +1,11 @@
+* {
+	font-family: "Be Vietnam Pro", sans-serif;
+	word-break: keep-all;
+}
+body {
+	overflow-x: hidden;
+	background-color: #f7f7f7;
+}
+html{
+	background-color: #f1f1f1;
+}

@@ -1,0 +1,123 @@
+/* GROUPS */
+.groupsTabCard{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 25%;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px;
+}
+.groupsTabs::-webkit-scrollbar {
+    display: none;
+}
+/* VERTICAL DOTS */
+.verticalDots{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.ellipsisV{
+    color: rgb(76, 76, 76);
+}
+/* HEAD IMG */
+.groupImgParent{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+}
+.groupImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.groupImg img{
+    height: 100%;
+}
+/* TEXT */
+.groupsTxt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.groupsTxt h3{
+    font-size: 1.5rem;
+}
+.groupsTxt h5{
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* PEOPLE IN GROUP IMG */
+.participantsParent{
+    position: relative;
+    width: 135px;
+    display: flex;
+    justify-content: center;
+}
+.participantImg{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    border: 5px solid white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.participantImg img{
+    height: 100%;
+}
+.participant1, .participant2, .participant3{
+    position: absolute;
+}
+.participant1{
+    left: 40px;
+    z-index: 1;
+}
+.participant2{
+    left: 0px;
+    z-index: 0;
+}
+.participant3{
+    left: 80px;
+    z-index: 1;
+}
+.participantsPositioning{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#rewardTabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 912px) {
+	.tabsParent {
+		width: 100%;
+		margin: 10px 0px;
+	}
+	.groupsTabs{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	}
+    .groupsTabCard{
+       width: 90%;
+    }
+    #rewardTabs{
+        flex-direction: column;
+    }
+
+    
+}
+

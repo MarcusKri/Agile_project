@@ -1,0 +1,111 @@
+
+#RemoveStyle {
+	text-decoration: none;
+	color: #faf8f6 /*!important*/;
+}
+#RemoveStyleBlack {
+	text-decoration: none;
+	color: #1d1c1a;
+}
+.nav-link {
+	color: #faf8f6 !important; 
+}
+.atCampusLogo {
+	height: 10vh;
+	margin: 10px 30px;
+	border-radius: 10px;
+}
+.atCampusNav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #1d1c1a;
+}
+#myPoints {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#pointText {
+	color: #faf8f6;
+	align-items: center;
+	font-size: 1.4rem;
+	margin: 0.4rem;
+}
+
+#leftWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.logIn {
+	display: flex;
+	border-left: 2px solid #faf8f6;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.logInLink {
+	font-weight: 600;
+}
+.Grupper p {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.Oppdrag p {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.omOppdrag p {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.Kuponger p {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.minSide p {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+#removeStyle p {
+	font-size: 1.1rem;
+}
+.missionGroup {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.headLine {
+	color: #faf8f6;
+	margin-left: 10.9%;
+}
+.ps {
+	color: #faf8f6;
+}
+.dropdown-item:active{
+	background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 991px) {
+	.navbar-toggler {
+		display: flex;
+		background-color: #f1f1f1;
+		justify-content: flex-end;
+	}
+
+	.logIn {
+		border-left: none;
+		flex-direction: column;
+	}
+	.navLinks {
+		padding: 10px;
+		width: 240px;
+	}
+}

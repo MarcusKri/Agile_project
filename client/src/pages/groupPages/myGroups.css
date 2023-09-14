@@ -1,0 +1,75 @@
+/* GIVE FLEXBOX */
+.flex{
+	display: flex;
+}
+/* MISSION CARD */
+#missionCard{
+	min-height: 450px;
+	padding: 0px !important;
+}
+/* PARENT TO GROUP PAGE */
+.groupPageContainer {
+	width: 100%;
+	display: flex;
+	background-color: #f1f1f1;
+	height: 100%;
+}
+.groupPageContainer::-webkit-scrollbar {
+    display: none;
+}
+/* GROUPS DISPLAY */
+.mainDisplayParent {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #f1f1f1;
+}
+.mainDisplayParent::-webkit-scrollbar {
+    display: none;
+}
+.mainDisplay {
+	margin: 15px;
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+.chatDisplay {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	flex-direction: row;
+	padding: 5px;
+	margin: 10px;
+}
+#greenBackgorund {
+	background-color: #232b2b;
+}
+#h1title {
+	color: white;
+}
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+input[type="text"],
+select,
+textarea,
+text {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+.groupName {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}

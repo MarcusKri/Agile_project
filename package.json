@@ -1,0 +1,128 @@
+{
+	"name": "Smidig prosjekt",
+	"version": "1.0.0",
+	"description": "https://github.com/MarcusKristoffersen/exam_atcampus",
+	"main": "index.js",
+	"scripts": {
+		"start": "cd server && npm start",
+		"postinstall": "npm run install:client && npm run install:server",
+		"install:client": "cd client && npm install --include=dev",
+		"install:server": "cd server && npm install",
+		"build": "npm run build:client && npm run build:server",
+		"build:client": "cd client && npm run build",
+		"build:server": "cd server && npm run build",
+		"dev": "concurrently npm:dev:client npm:dev:server",
+		"dev:client": "cd client && npm run dev",
+		"dev:server": "cd server && npm run dev",
+		"test": "npm run test:client && npm run test:server",
+		"test:client": "cd client && npm test",
+		"test:server": "cd server && npm test"
+	},
+	"keywords": [],
+	"author": "",
+	"source": "src/index.js",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MarcusKristoffersen/exam_atcampus"
+	},
+	"bugs": {
+		"url": "https://github.com/MarcusKristoffersen/exam_atcampus"
+	},
+	"homepage": "https://github.com/MarcusKristoffersen/exam_atcampus",
+	"devDependencies": {
+		"concurrently": "^7.0.0",
+		"@babel/preset-env": "^7.18.2",
+		"@babel/preset-react": "^7.16.7",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^12.1.4",
+		"assert": "^2.0.0",
+		"babel-jest": "^28.1.1",
+		"browserify-zlib": "^0.2.0",
+		"buffer": "^6.0.3",
+		"crypto-browserify": "^3.12.0",
+		"eslint": "^8.17.0",
+		"eslint-plugin-react": "^7.30.0",
+		"events": "^3.3.0",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^27.5.1",
+		"jest-babel": "^1.0.1",
+		"jest-css-modules-transform": "^4.4.2",
+		"jest-static-stubs": "^0.0.1",
+		"jest-transform-stub": "^2.0.0",
+		"os-browserify": "^0.3.0",
+		"parcel": "^2.3.2",
+		"path-browserify": "^1.0.1",
+		"process": "^0.11.10",
+		"querystring-es3": "^0.2.1",
+		"react-test-renderer": "^17.0.2",
+		"reactjs-popup": "^2.0.5",
+		"stream-browserify": "^3.0.0",
+		"url": "^0.11.0",
+		"util": "^0.12.4"
+	},
+	"dependencies": {
+		"cookie-parser": "^1.4.6",
+		"prettier": "^2.5.1",
+		"@fortawesome/fontawesome-free-brands": "^5.0.13",
+		"@fortawesome/fontawesome-svg-core": "^6.1.1",
+		"@fortawesome/free-solid-svg-icons": "^6.1.1",
+		"@fortawesome/react-fontawesome": "^0.1.18",
+		"@parcel/transformer-react-refresh-wrap": "^2.3.2",
+		"bootstrap": "^5.1.3",
+		"firebase": "^9.8.2",
+		"font-awesome": "^4.7.0",
+		"mongo-image-converter": "^1.0.2",
+		"qrcode": "^1.5.0",
+		"react": "^17.0.2",
+		"react-avatar": "^4.1.0",
+		"react-bootstrap": "^2.4.0",
+		"react-chat-engine": "^1.11.22",
+		"react-dom": "^17.0.2",
+		"react-file-base64": "^1.0.3",
+		"react-firebase-hooks": "^5.0.3",
+		"react-fontawesome": "^1.7.1",
+		"react-icons": "^4.3.1",
+		"react-popup": "^0.11.0",
+		"react-redux": "^8.0.2",
+		"react-router-dom": "^6.2.2",
+		"redux": "^4.2.0",
+		"uuid": "^8.3.2"
+	},
+	"babel": {
+		"presets": [
+			[
+				"@babel/preset-env",
+				{
+					"targets": {
+						"node": "current"
+					}
+				}
+			],
+			[
+				"@babel/preset-react"
+			]
+		]
+	},
+	"jest": {
+		"moduleNameMapper": {
+			"\\.(jpg|jpeg|png)$": "<rootDir>/__mocks__/fileMock.js"
+		},
+		"testEnvironment": "jsdom",
+		"transform": {
+			"^.+\\.(js|jsx)$": "babel-jest",
+			"^.+\\.js$": "babel-jest",
+			".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+		},
+		"globals": {
+			"NODE_ENV": "test"
+		},
+		"moduleFileExtensions": [
+			"js",
+			"jsx"
+		],
+		"moduleDirectories": [
+			"node_modules"
+		]
+	}
+}

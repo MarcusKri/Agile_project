@@ -1,0 +1,140 @@
+/* MAIN */
+.myPage {
+	width: 100%;
+	min-height: 90vh;
+	background-color: #f1f1f1;
+	padding: 100px 10px 10px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.divider {
+	padding: 10px 0px;
+}
+.allContent {
+	width: 100%;
+	display: flex;
+}
+.myPageContents {
+	width: 100%;
+	display: flex;
+}
+.profileContent {
+	width: 40%;
+}
+
+/* PROFILE */
+.profileCard {
+	background-color: #ffff;
+	width: 100%;
+	height: 755px;
+	position: relative;
+	padding: 10px; 
+}
+.top {
+	display: flex;
+}
+.name {
+	text-align: left;
+	margin-left: 20px;
+}
+/* IMG */
+.avatar {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: 690px;
+	left: 0.5vw;
+	overflow: hidden;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
+}
+.avatar img {
+	height: 100%;
+	border-radius: 1000px;
+}
+.uploadImg {
+	margin: 80px 0px 10px 2px;
+}
+.uploadImg input {
+	display: none;
+}
+.uploadImg label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	border: 0px;
+	color: #ffffff;
+	padding: 5px;
+	background-color: #7c7fca;
+}
+.uploadImg label:hover {
+	cursor: pointer;
+}
+.uploadImg label > p {
+	margin: 0px 5px;
+	padding: 0px;
+}
+/* TXT */
+.profileDetails {
+	text-align: left;
+}
+.profileDetails h6 {
+	font-style: oblique;
+	font-size: 0.8rem;
+	margin: 0px;
+}
+.profileCard h3 {
+	font-size: 1.2rem;
+}
+/* ITEM */
+.profileItem {
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 10px 0px;
+}
+.profileIcon {
+	border-left: 8px solid rgb(255, 214, 107);
+	height: 100%;
+	width: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.profileTxt {
+	width: 85%;
+	padding: 6px;
+}
+.school {
+	font-weight: bold;
+	color: rgb(58, 58, 58);
+}
+
+.hide {
+	display: none;
+}
+
+@media only screen and (max-width: 1318px) {
+	.allContent {
+		flex-direction: column;
+	}
+	.profileContent {
+		width: 100%;
+	}
+	.myPageContents {
+		width: 100%;
+		flex-direction: column;
+	}
+	.uploadImg {
+		margin: 80px 0px 10px 0px;
+	}
+}

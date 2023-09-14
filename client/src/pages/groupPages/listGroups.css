@@ -1,0 +1,65 @@
+/* PS !IMPORTANT IS USED TO OVERRIDE BOOTSTRAP WHICH HAS !IMPORANTANT AS DEFAULT ON MANY ELEMENTS */
+
+/* MAIN PARENT THAT DISPLAYS FLEX */
+.listGroupParent {
+	width: 100%;
+	display: flex;
+}
+
+/* MINE GRUPPER  */
+.listCardParent {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.listCard {
+	width: 100% !important; 
+}
+.listGroupsParent{
+	display: flex;
+	width: 45%;
+	justify-content: center;
+}
+.cardImg {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.cardImg img {
+	width: 100% !important;
+}
+.listCardBody {
+	text-align: left;
+}
+/* BTN */
+.listBtn {
+	background-color: #9699d5 !important;
+	border: 0px !important;
+	width: 100%;
+}
+.listBtnParent {
+	width: 100%;
+}
+
+#gruppeID {
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*  */
+@media only screen and (max-width: 1028px) {
+	.listCard {
+		width: 80% !important;
+	}
+	.listGroupsParent{
+		display: flex;
+		width: 100%;
+		padding: 10px 10%;
+		justify-content: center;
+	}
+}
+

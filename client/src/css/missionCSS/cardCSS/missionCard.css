@@ -1,0 +1,110 @@
+#missionCardText {
+	padding: 40px 10px 10px 10px;
+}
+/* POINTS STYLING */
+#points {
+	display: flex;
+	align-items: center;
+}
+#points h3 {
+	font-size: 1.5rem;
+	margin: 0px 5px;
+	color: #ffffff;
+}
+/* DIAMOND ICON */
+.diamondParent {
+	background-color: #ffffff;
+}
+/* ICONS */
+.completedIcon,
+.expiredIcon,
+.warningIcon,
+.diamondParent,
+.bullseyeIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border: 2px solid rgb(77, 77, 77);
+}
+.completedIcon{
+	color: green;
+	font-size: 2rem;
+	background-color: white;
+}
+.iconParent {
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+/* MISSION CARD STYLING */
+.missionCardBody {
+	background-color: white;
+	margin: 20px;
+}
+.cardHeader {
+	display: flex;
+	width: 100%;
+	padding: 10px;
+}
+.headerH3 {
+	color: #ffff;
+	display: flex;
+}
+.missionCardWrapper {
+	width: 40%;
+	min-height: 300px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.bootstrapCardHeader {
+	padding: 0px; /* Removes padding bootstrap */
+}
+.pointsAndHeader {
+	width: 66.34%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.bullseyeParent {
+	position: relative;
+	padding: 30px;
+}
+.bullseyeIcon {
+	background-color: #ffffff;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 17px;
+	right: 30px;
+}
+/* FLEXBOX CENTER ELEMENT */
+.flexCenter {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.flexCenter div > p {
+	color: #ffff;
+}
+/* TEXT BESIDES ICON */
+.icon-p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 12px;
+	margin-right: 10px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+	.missionCardWrapper{
+		width: 80%; /*CHANGE WIDTH ON SMALLER SIZE*/
+	}
+}

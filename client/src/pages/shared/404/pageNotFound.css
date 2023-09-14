@@ -1,0 +1,46 @@
+/* 404 ERROR*/
+.errorParent {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.errorSection {
+	height: 500px;
+	width: 100%;
+	background-color: #9699d5;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.errorImage {
+	position: absolute;
+	bottom: 294px;
+}
+.errorContent {
+	height: 300px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.errorContent h4 {
+	font-weight: 300;
+}
+/* BUTTON */
+.backBtn {
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #f2f2f2;
+	width: 100%;
+	font-size: 20px;
+}
+.backBtn:hover {
+	cursor: pointer;
+}
+.backBtnForm {
+	z-index: 6; /* MAKES SURE THE FORM AND BUTTON IS A HIGHER z-index THAN THE IMAGE */
+}

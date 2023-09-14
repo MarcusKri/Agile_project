@@ -1,0 +1,234 @@
+/* PARENT CONTAINER */
+.asideNav {
+	display: none;
+	position: relative;
+}
+.asideWrapper{
+	position: -webkit-sticky;
+ 	position: sticky;
+	top: 0px;
+	background-color: white;
+	height: 100vh;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* JUST TO GIVE SOME ADDITINAL PADDING ON BOTTOM OF ASIDE */
+/* HEADER */
+.asideHeader {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.asideHeader h3 {
+	font-weight: 300;
+	font-size: 1.5rem;
+	text-align: left;
+	width: 100%;
+	padding: 0px 5%;
+}
+.findGroupsContent h3{
+	font-weight: 300;
+	font-size: 1.5rem;
+	text-align: left;
+	width: 100%;
+	padding: 0px 5%;
+}
+/* CONTENTS */
+.asideContent {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+/* BUTTONS */
+.asideBtn {
+	width: 90%;
+	font-size: 16px;
+	background-color: #d8d9ef;
+	margin: 20px 5px;
+	padding: 7.5px;
+	border-radius: 4px;
+}
+.asideBtn:hover {
+	background-color: #9699d5;
+}
+.asideBtnLink{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.asideBtnP p{
+	margin: 0px;
+}
+/* FINDING GROUP CHOICES */
+.asideFind{
+	text-align: center;
+}
+.choicesParent {
+	display: flex;
+}
+.choicesHeader {
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 7.5px;
+	text-align: center;
+}
+.choicesHeader h3 {
+	font-size: 18px;
+	width: 50%;
+}
+.choices {
+	width: 66.67%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 5px 5px 5px;
+}
+.choices h3 {
+	font-size: 16px;
+	font-weight: 300;
+	width: 50%;
+}
+.choices h3:hover {
+	color: rgb(124, 124, 240);
+	cursor: pointer;
+}
+/* HR */
+.horizontalRule {
+	width: 90%;
+	border: 1px solid #e8e8e8;
+}
+/* FIND */
+.asideLinks{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-direction: column;
+	text-align: center;
+}
+/* BTN */
+.findGroupsBtn {
+	width: 90%;
+	font-size: 16px;
+	background-color: #d8d9ef;
+	margin: 20px 5px;
+	padding: 7.5px;
+	border-radius: 4px;
+}
+.findGroupsBtn:hover {
+	background-color: #7c7fca;
+	color: white;
+}
+/* HAMBURGER MENU */
+.asideHamburger {
+	width: 100px;
+	background-color: rgb(233, 233, 233);
+	position: fixed;
+	bottom: 0px;
+	z-index: 1;
+}
+.showBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.showBtn:hover {
+	font-weight: bold;
+}
+.asideHamburger button {
+	background-color: #ffd66b;
+	padding: 20px;
+}
+.asideHamburgerIcon {
+	width: 100%;
+}
+
+/* HIDE HAMBURGER MENU */
+.hideHamburger button {
+	width: 100%;
+	padding: 20px;
+	background-color: #ffa1a1;
+}
+.hideHamburger button:hover {
+	font-weight: bold;
+}
+.hideAside {
+	display: none;
+}
+/* CLOSE BTNS */
+.asideBtns{
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+.closeBtn{
+	background-color: red;
+}
+.normalBtn{
+	background-color: orange;
+}
+.hugeBtn{
+	background-color: green;
+}
+.closeBtn, .normalBtn, .hugeBtn {
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	margin: 0px 2px;
+}
+.closeBtn:hover, .normalBtn:hover, .hugeBtn:hover{
+	cursor: pointer;
+	opacity: 60%;
+}
+/* CHANGE WIDTHS OF SIDEBAR */
+/* NORMAL */
+.normalWidth{
+	width: 300px;
+}
+/* LARGE WIDTH */
+.largeWidth{
+	width: 500px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 700px) {
+	.asideNav {
+		display: none;
+		background-color: white;
+	}
+	.closeBtn, .normalBtn, .hugeBtn {
+		width: 22px;
+		height: 22px;
+	}
+	.largeWidth{
+		width: 360px;
+	}
+}
+@media only screen and (max-height: 730px) {
+	.asideHeader {
+		display: none;
+	}
+}
+@media only screen and (max-height: 680px) {
+	.asideHeader {
+		display: none;
+	}
+	.asideBtnP p {
+		display: none;
+	}
+	.asideBtn{
+		width: 20%;
+	}
+	.asideLinks{
+		flex-direction: row;
+	}
+	.asideContent{
+		justify-content: flex-start;
+	}
+}

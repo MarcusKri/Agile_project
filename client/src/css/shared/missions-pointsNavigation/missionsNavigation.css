@@ -1,0 +1,22 @@
+#missionsNav {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px;
+}
+.navigationLinks {
+	font-size: 25px;
+	font-weight: bold;
+	color: rgb(28, 26, 26);
+	text-decoration: underline;
+}
+.navigationLinks:hover {
+	color: rgb(28, 26, 26);
+	font-style: italic;
+}
+.underline {
+	border-left: 5px solid rgb(28, 26, 26);
+	padding-left: 5px;
+}

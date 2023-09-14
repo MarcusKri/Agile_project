@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Groups component shows error message 1`] = `"<div><h1>Erorr....</h1><div id=\\"error-text\\">Error: Something went wrong</div></div>"`;
+
+exports[`List Groups component shows groups 1`] = `"<div class=\\"listCardParent\\"><div class=\\"listGroupsParent\\"><div class=\\"listCard card\\"><div class=\\"cardImg\\"><img class=\\"card-img-bottom col\\" alt=\\"Card image\\" style=\\"width: 10rem;\\"></div><div class=\\"listCardBody card-body\\"><p class=\\"d-flex flex-column\\" id=\\"cardGroups\\"><h3><b>Navn:</b> domba </h3> <b>Campus:</b>  <b>Studie:</b>  <b>Arbeidsform:</b> <b>Anonymitet:</b> </p></div><div class=\\"listBtnParent\\"><button type=\\"button\\" class=\\"listBtn btn btn-success\\">Bli medlem</button></div></div></div><div class=\\"listGroupsParent\\"><div class=\\"listCard card\\"><div class=\\"cardImg\\"><img class=\\"card-img-bottom col\\" alt=\\"Card image\\" style=\\"width: 10rem;\\"></div><div class=\\"listCardBody card-body\\"><p class=\\"d-flex flex-column\\" id=\\"cardGroups\\"><h3><b>Navn:</b> kalkutta </h3> <b>Campus:</b>  <b>Studie:</b>  <b>Arbeidsform:</b> <b>Anonymitet:</b> </p></div><div class=\\"listBtnParent\\"><button type=\\"button\\" class=\\"listBtn btn btn-success\\">Bli medlem</button></div></div></div></div>"`;
+
+exports[`List Groups component shows loading screen 1`] = `"<div>Loading.....</div>"`;

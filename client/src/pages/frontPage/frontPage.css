@@ -1,0 +1,143 @@
+.frontpage_parent {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 50px;
+    background-color: #f1f1f1;
+}
+.left_side {
+    align-self: center;
+}
+#app {
+    text-align: -webkit-center;
+}
+.logger_inn_text {
+    padding: 1em;
+    background-color: #308752;
+    color: #ddd;
+    text-align: center;
+    max-width: 20em;
+    border-radius: 0.5em;
+    align-items: center;
+    border: 4px solid black;
+    margin: 2em;
+}
+.atCampus_info_text {
+    font-size: 18px;
+    text-align: left;
+}
+.social_media_links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1% 20%;
+}
+.instagram_logo,
+.facebook_logo,
+.linkedin_logo,
+.twitter_logo {
+    height: 50px;
+    width: 50px;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-filter: grayscale(100%);
+    -moz-transition: 0.5s ease-in-out;
+    -o-filter: grayscale(100%);
+    -o-transition: 0.5s ease-in-out;
+}
+.instagram_logo:hover,
+.facebook_logo:hover,
+.linkedin_logo:hover,
+.twitter_logo:hover {
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-filter: grayscale(0%);
+    -moz-transition: 0.5s ease-in-out;
+    -o-filter: grayscale(0%);
+    -o-transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.instagram_logo:hover {
+    color: #e95950;
+}
+.facebook_logo:hover {
+    color: #4267b2;
+}
+.linkedin_logo:hover {
+    color: #1da1f2;
+}
+.twitter_logo:hover {
+    color: #0077b5;
+}
+.feide_image_parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feide_image_parent img {
+    width: 30%;
+}
+
+.feide_info {
+    font-weight: bold;
+}
+
+.frontpage_illustrations {
+    margin-right: auto;
+    width: 100%;
+}
+
+.frontpage_illustrations_parent {
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.atCampus_header {
+    font-size: 70px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.atCampus_logo {
+    width: 50%;
+}
+
+.feide_div {
+    padding: 50px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .frontpage_parent {
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+
+    .frontpage_illustrations_parent {
+        justify-content: center;
+    }
+
+    .frontpage_illustrations_parent img {
+        height: 150px;
+        width: auto;
+    }
+
+    .atCampus_header {
+        font-size: 35px;
+    }
+
+    .feide_div {
+        padding: 10px;
+    }
+
+    .loginTxt {
+        width: 75%;
+    }
+
+    .social_media_links {
+        padding: 15px;
+    }
+}

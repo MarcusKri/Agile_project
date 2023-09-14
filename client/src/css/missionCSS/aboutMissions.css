@@ -1,0 +1,85 @@
+#about-mission-body {
+	width: 100%;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#top-img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#mission-txt {
+	width: 80%;
+	margin: 10px;
+}
+#mission-header {
+	font-style: italic;
+}
+#explanationH1 {
+	margin-top: 30px;
+}
+.aboutHr {
+	border: 0.8px solid black;
+	width: 90%;
+	margin-top: 30px;
+}
+#explanation {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.explanation-div {
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 600px;
+	text-align: center;
+}
+.explanation-div img {
+	width: 85%;
+}
+
+.explanation-div2 {
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 600px;
+	text-align: center;
+}
+
+.explanation-div2 img {
+	width: 72.5%;
+}
+
+.explanation-div3 {
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 600px;
+	text-align: center;
+}
+.explanation-div3 img {
+	width: 80%;
+}
+
+.borders {
+	border: 2px solid yellow;
+}
+
+@media only screen and (max-width: 912px) {
+	#explanation {
+		flex-direction: column;
+	}
+	.explanation-div {
+		width: 100%;
+		min-height: auto;
+	}
+}

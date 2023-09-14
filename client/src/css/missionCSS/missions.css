@@ -1,0 +1,61 @@
+.missionCardParent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.alertWrapper {
+	opacity: 0%;
+	position: fixed;
+	width: 500px;
+	height: 200px;
+	z-index: 2;
+	margin: 1.2rem;
+	padding: 20px;
+	overflow: hidden;
+	bottom: -30%;
+	right: 5%;
+}
+
+#animation {
+	visibility: visible;
+	animation: colorAnimation 2s;
+	opacity: 100%;
+}
+
+#successAlert {
+	position: absolute;
+}
+
+@keyframes colorAnimation {
+	0% {
+		bottom: -30%;
+		right: -5%;
+	}
+	50% {
+		bottom: -10%;
+		right: -5%;
+	}
+	100% {
+		bottom: -10%;
+		right: -5%;
+	}
+}
+
+@keyframes alertAnimation {
+	0% {
+		top: 300px;
+	}
+
+	50% {
+		top: 0px;
+	}
+
+	100% {
+		display: none;
+	}
+}
+
+.hide {
+	display: none;
+}

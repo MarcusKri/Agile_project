@@ -1,0 +1,107 @@
+/* Bootstrap override  */
+.card {
+	flex-direction: column !important;
+}
+
+/* TITLE AND LOGO */
+.rewardCard {
+	width: 40% !important;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	background-color: white;
+	min-height: 570px;
+}
+.titleOffer {
+	margin-left: 10px;
+	text-align: left;
+}
+.titleHeader {
+	padding: 6px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+.titleHeader h3 {
+	font: 1.8rem;
+}
+.titleHeader h5 {
+	font-size: 1rem;
+}
+.titleHeader h5, .titleHeader h3 {
+	color: #4c4c4c;
+}
+.logoImg {
+	width: 80px;
+}
+.logoImg img {
+	width: 100%;
+	border-radius: 100%;
+}
+/* IMAGE */
+.rewardImage {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.rewardImage img {
+	width: 100%;
+}
+/* TEXT */
+.textField {
+	padding: 10px 10px 20px 10px;
+	text-align: left;
+	min-height: 120px;
+}
+
+/* BUTTON */
+#rewardBtn {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	padding: 3px;
+	margin: 10px;
+	background-color: #b0b2df !important;
+}
+
+.rewardUsed{
+	width: 40% !important;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	background-color: #f1f1f1;
+}
+
+.qrWrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.qrImage{
+	height: 25vh;
+	margin: 20px;
+	border-radius: 5px;
+}
+@media only screen and (max-width: 912px) {
+	canvas {
+		display: block;
+	}
+}
+
+/* MEDIA */
+@media only screen and (max-width: 912px) {
+	.rewardCard {
+		width: 90% !important;
+	}
+
+	.qrImage{
+		height: 17vh;
+	}
+	.rewardUsed{
+        width: 80% !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+    }
+}

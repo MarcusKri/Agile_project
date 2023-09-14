@@ -1,0 +1,113 @@
+.rewardCard{
+	width: 40% !important;
+}
+.rewardCardContent{
+	background-color: white;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 0.5px solid rgb(243, 243, 243);
+}
+.rewardPage {
+	width: 100%;
+	min-height: 90vh;
+	padding: 20px;
+	padding-top: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.bootstrapCardHeader {
+	background-color: #b0b2ef !important;
+}
+.qrCode {
+	display: none;
+	height: 46vh;
+    justify-content: space-between;
+}
+.show {
+	display: flex;
+	flex-direction: column;
+}
+.hideRewardCard {
+	display: none !important;
+}
+
+.animationWrapper {
+	position: fixed;
+	width: 500px;
+	height: 200px;
+	z-index: 2;
+	margin: 1.2rem;
+	padding: 20px;
+	overflow: hidden;
+	bottom: -30%;
+	right: 5%;
+}
+
+#rewardAnimation {
+	visibility: visible;
+	animation: colorAnimation 2s;
+}
+
+.hide {
+	display: none;
+}
+
+.showCardBtn {
+	background-color: #7c7fca;
+	width: 90%;
+	padding: 12.5px;
+	border-radius: 4px;
+	margin-left:5%;
+}
+.showCardBtn:hover {
+	transition: 0.75s ease-out;
+	border-radius: 20px;
+}
+
+.qrDiv canvas {
+	width: 35% !important;
+	height: auto !important;
+}
+
+@keyframes colorAnimation {
+	0% {
+		bottom: -30%;
+		right: -5%;
+	}
+	50% {
+		bottom: -10%;
+		right: -5%;
+	}
+	100% {
+		bottom: -10%;
+		right: -5%;
+	}
+}
+
+@media only screen and (max-width: 912px) {
+	.rewardPage {
+		flex-direction: column;
+		align-items: center;
+	}
+	.qrDiv {
+		width: 300px;
+		height: 300px;
+	}
+	
+	.qrCode {
+		padding: 20px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 550px;
+	}
+	
+}
+.breadcrumbs {
+	margin: 10px;
+}
+.breadcrumbItem {
+	color: black;
+}
